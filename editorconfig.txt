@@ -1,0 +1,6 @@
+git config --global color.status.untracked cyan
+git config --global color.status.changed cyan
+git config --global alias.s status
+git config --global alias.co checkout
+
+
