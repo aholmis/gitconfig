@@ -1,0 +1,21 @@
+# vim ~/.bash_profile
+
+function gitall() {
+        git s
+        git add .
+        git commit -m "$1"
+        git push
+}
+
+function vs() {
+        powershell ii *.sln
+}
+
+function gitb() {
+        git co -b "$1"
+}
+
+function gitmain() {
+        git co main
+        git pull
+}
