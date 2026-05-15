@@ -1,0 +1,59 @@
+# notepad $PROFILE
+
+function gits() {
+  param(
+    [String[]] $ext
+  )
+  git status
+}
+
+function kvsearch() {
+  param(
+    [String[]] $name
+  )
+  $vaultname = "TEST-WEU-KV-1"
+  az keyvault secret list --vault-name $vaultname --query "[?contains(name, '$name')].name" --output tsv
+}
+
+function kvsearchprod() {
+  param(
+    [String[]] $name
+  )
+  $vaultname = "PROD-WEU-KV-1"
+  az keyvault secret list --vault-name $vaultname --query "[?contains(name, '$name')].name" --output tsv
+}
+
+function kvread() {
+  param(
+    [String[]] $name
+  )
+  $vaultname = "TEST-WEU-KV-1"
+  az keyvault secret show --vault-name $vaultname --name $name
+}
+
+function kvreadprod() {
+  param(
+    [String[]] $name
+  )
+  $vaultname = "PROD-WEU-KV-1"
+  az keyvault secret show --vault-name $vaultname --name $name
+}
+
+function kvset() {
+  param(
+    [String[]] $name,
+    [String[]] $value
+  )
+  $vaultname = "TEST-WEU-KV-1"
+  az keyvault secret set --vault-name $vaultname --name $name --value $value
+}
+
+function kvdelete() {
+  param(
+    [String[]] $name,
+    [String[]] $value
+  )
+  $vaultname = "TEST-WEU-KV-1"
+  az keyvault secret delete --vault-name $vaultname --name $name
+}
+
