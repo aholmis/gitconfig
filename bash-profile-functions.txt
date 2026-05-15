@@ -11,6 +11,10 @@ function vs() {
         powershell ii *.sln
 }
 
+function vsx() {
+        powershell ii *.slnx
+}
+
 function gitb() {
         git co -b "$1"
 }
@@ -18,4 +22,8 @@ function gitb() {
 function gitmain() {
         git co main
         git pull
+}
+
+function gitrebase() {
+        git pull --rebase origin main
 }
