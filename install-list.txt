@@ -1,0 +1,12 @@
+# winget
+
+winget install --id Git.Git -e --source winget
+
+winget install --id Microsoft.PowerShell --source winget
+
+# vscode og visual studio fra web
+
+https://code.visualstudio.com/insiders/
+
+https://visualstudio.microsoft.com/downloads/
+
