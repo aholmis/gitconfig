@@ -4,3 +4,5 @@ git config --global alias.s status
 git config --global alias.co checkout
 
 
+git config --global user.email "andersholmefjord@gmail.com"
+git config --global user.name "Anders Johan Holmefjord"
