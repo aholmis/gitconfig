@@ -10,3 +10,10 @@ https://code.visualstudio.com/insiders/
 
 https://visualstudio.microsoft.com/downloads/
 
+# other
+
+clipx
+
+coretemp
+
+claude code
