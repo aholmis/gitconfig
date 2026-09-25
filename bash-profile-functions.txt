@@ -27,3 +27,7 @@ function gitmain() {
 function gitrebase() {
         git pull --rebase origin main
 }
+
+function pow() {
+        start pwsh
+}
