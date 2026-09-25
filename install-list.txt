@@ -4,9 +4,11 @@ winget install --id Git.Git -e --source winget
 
 winget install --id Microsoft.PowerShell --source winget
 
+winget install --id Anthropic.ClaudeCode --source winget
+
 # vscode og visual studio fra web
 
-https://code.visualstudio.com/insiders/
+https://code.visualstudio.com/
 
 https://visualstudio.microsoft.com/downloads/
 
@@ -15,5 +17,3 @@ https://visualstudio.microsoft.com/downloads/
 clipx
 
 coretemp
-
-claude code
